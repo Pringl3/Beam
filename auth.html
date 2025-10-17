@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/auth.css">
+    <!-- Font Awesome and Boxicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <!-- Scripts -->
+    <script type="module" src="JS/CreateAccount/createaccount.js" defer></script>
+    <script type="module" src="JS/Login/login.js" defer></script>
+    <script type="module" src="JS/l&r.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8178581069986234"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-box">
+            <div class="active" id="active"></div>
+            <button class="toggle-btn login-toggle">Login</button>
+            <button class="toggle-btn register-toggle">Register</button>
+        </div>
+
+        <div class="social-icons">
+            <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+            <a href="" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+
+        <form class="form" id="login-form">
+            <h2>Login</h2>
+            <input type="email" class="email-input input-field" id="login-email" placeholder="Email..." required>
+            <input type="password" class="password-input input-field" id="login-password" placeholder="Password..." required>
+            <div class="remember-me">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <button type="submit" class="login-btn" id="login-btn">Login</button>
+            <a href="" class="forgot-pw">Forgot Password?</a>
+        </form>
+
+        <form class="form" id="register-form">
+            <h2>Register</h2>
+            <input type="text" class="username-input input-field" id="register-username" placeholder="Username..." required>
+            <input type="email" class="email-input input-field" id="register-email" placeholder="Email..." required>
+            <input type="password" class="password-input input-field" id="register-password" placeholder="Password..." required>
+            <div class="terms-checkbox">
+                <input type="checkbox" id="terms-checkbox" required>
+                <span>I agree to the <a href="/terms&conditions.html" target="_blank">Terms and Conditions</a></span>
+            </div>
+            <button type="submit" class="register-btn" id="register-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
